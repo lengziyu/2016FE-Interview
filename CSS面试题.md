@@ -1,10 +1,12 @@
 # CSS面试题
 
-1.[介绍一下CSS的盒子模型？](#1)
+1. [介绍一下CSS的盒子模型？](#1)
 
-2.[CSS3有哪些新特性？](#2)
+2. [CSS3有哪些新特性？](#2)
 
-3.[如何居中div？如何居中一个浮动元素？](#3)
+3. [如何居中div？如何居中一个浮动元素？](#3)
+
+
 
 <a name="1"></a>
 **1.介绍一下CSS的盒子模型？**
@@ -25,21 +27,19 @@
 
 给div设置一个宽度，然后添加margin:0 auto属性
 ```css
-    div{
-        width:200px;
-        margin:0 auto;
-     }
+ div{
+     width:200px;
+     margin:0 auto;
+  }
 ```
-居中一个浮动元素
-      确定容器的宽高 宽500 高 300 的层
-      设置层的外边距
+居中一个浮动元素，确定容器的宽高 宽500 高 300 的层，设置层的外边距
 ```css
-     .div {
-      Width:500px ; height:300px;//高度可以不设
-      Margin: -150px 0 0 -250px;
-      position:relative;相对定位
-      background-color:pink;//方便看效果
-      left:50%;
-      top:50%;
-    }
+  .div {
+   width:500px ; height:300px;//高度可以不设
+   margin: -150px 0 0 -250px;
+   position:relative;相对定位
+   background-color:pink;//方便看效果
+   left:50%;
+   top:50%;
+ }
 ```
