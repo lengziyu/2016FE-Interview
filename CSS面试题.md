@@ -6,7 +6,7 @@
 
 3. [如何居中div？如何居中一个浮动元素？](#3)
 
-
+4.[如何清除浮动？](#4)
 
 <a name="1"></a>
 **1.介绍一下CSS的盒子模型？**
@@ -43,3 +43,27 @@
    top:50%;
  }
 ```
+<a name="4"></a>
+**4.如何清除浮动？**
+(1).clear:both;
+```
+div{
+    float:left;
+    clear:both;
+}
+```
+(2).after 方法
+```
+.outer {
+    zoom:1; /*zoom: 1;for IE6/7 Maxthon2*/
+}
+.outer :after {
+    clear:both;
+    content:".";
+    display:block; /*for FF/chrome/opera/IE8*/
+    width: 0;
+    height: 0;
+    visibility:hidden;
+    }
+```
+(3).设置父级div定义 overflow: auto;
